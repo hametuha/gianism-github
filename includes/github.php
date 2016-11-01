@@ -127,7 +127,6 @@ class Github extends AbstractService {
 						update_user_meta( $user_id, $this->umeta_login, $profile->login );
 						update_user_meta( $user_id, 'nickname', $profile->name );
 						update_user_meta( $user_id, 'description', $profile->bio );
-
 						$this->db->update(
 							$this->db->users,
 							array(
